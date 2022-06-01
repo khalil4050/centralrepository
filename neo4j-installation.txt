@@ -1,0 +1,12 @@
+Easy and almost foolproof way to install Neo4j
+
+1. sudo apt update
+2. sudo apt install apt-transport-https ca-certificates curl software-properties-common
+3. curl -fsSL https://debian.neo4j.com/neotechnolog... | sudo apt-key add -
+4. sudo add-apt-repository "deb https://debian.neo4j.com stable 4.1"
+5. sudo apt install neo4j
+6. sudo systemctl enable neo4j.service
+7. sudo systemctl status neo4j.service
+8. cypher-shell
+9. sudo nano /etc/neo4j/neo4j.conf
+10. CREATE (:Shark {name: 'Great White'});
